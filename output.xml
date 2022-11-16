@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20221116 17:40:03.094" rpa="false" schemaversion="3">
+<suite id="s1" name="Case 2 AllowServiceLocation" source="C:\Users\admin\PycharmProjects\PostiAssignment\TestCases\Case_2_AllowServiceLocation.robot">
+<test id="s1-t1" name="AllowSercieLocationAndClickSearch" line="10">
+<kw name="OpenBrowserForServicePickup" library="Resources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_service_point}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221116 17:40:03.566" level="INFO">Opening browser 'chrome' to base url 'https://www.posti.fi/en/service-points-on-map'.</msg>
+<status status="PASS" starttime="20221116 17:40:03.565" endtime="20221116 17:40:07.197"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221116 17:40:07.197" endtime="20221116 17:40:07.930"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20221116 17:40:07.931" endtime="20221116 17:40:07.933"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:onetrust-accept-btn-handler</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221116 17:40:07.934" level="INFO">Clicking element 'id:onetrust-accept-btn-handler'.</msg>
+<status status="PASS" starttime="20221116 17:40:07.933" endtime="20221116 17:40:09.544"/>
+</kw>
+<status status="PASS" starttime="20221116 17:40:03.565" endtime="20221116 17:40:09.545"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://body/div[@id='___gatsby']/div[@id='gatsby-focus-wrapper']/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/section[2]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221116 17:40:09.581" level="INFO">Clicking element 'xpath://body/div[@id='___gatsby']/div[@id='gatsby-focus-wrapper']/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/section[2]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]'.</msg>
+<status status="PASS" starttime="20221116 17:40:09.580" endtime="20221116 17:40:10.175"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://body/div[@id='___gatsby']/div[@id='gatsby-focus-wrapper']/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/section[2]/div[1]/div[2]/div[1]/div[1]/div[1]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221116 17:40:10.178" level="INFO">Clicking element 'xpath://body/div[@id='___gatsby']/div[@id='gatsby-focus-wrapper']/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/section[2]/div[1]/div[2]/div[1]/div[1]/div[1]/button[2]'.</msg>
+<status status="PASS" starttime="20221116 17:40:10.176" endtime="20221116 17:40:10.832"/>
+</kw>
+<kw name="Scroll To Element" library="Resources">
+<arg>xpath://h2[contains(text(),'Nearest service points')]</arg>
+<kw name="Get Horizontal Position" library="SeleniumLibrary">
+<var>${x}</var>
+<arg>${locator}</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<msg timestamp="20221116 17:40:11.106" level="INFO">${x} = 0</msg>
+<status status="PASS" starttime="20221116 17:40:10.842" endtime="20221116 17:40:11.106"/>
+</kw>
+<kw name="Get Vertical Position" library="SeleniumLibrary">
+<var>${y}</var>
+<arg>${locator}</arg>
+<doc>Returns the vertical position of the element identified by ``locator``.</doc>
+<msg timestamp="20221116 17:40:11.126" level="INFO">${y} = 1040</msg>
+<status status="PASS" starttime="20221116 17:40:11.107" endtime="20221116 17:40:11.126"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(${x}, ${y})</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221116 17:40:11.127" level="INFO">Executing JavaScript:
+window.scrollTo(0, 1040)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221116 17:40:11.126" endtime="20221116 17:40:11.136"/>
+</kw>
+<status status="PASS" starttime="20221116 17:40:10.841" endtime="20221116 17:40:11.137"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221116 17:40:21.147" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221116 17:40:11.138" endtime="20221116 17:40:21.147"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221116 17:40:21.148" endtime="20221116 17:40:24.556"/>
+</kw>
+<status status="PASS" starttime="20221116 17:40:03.564" endtime="20221116 17:40:24.557"/>
+</test>
+<status status="PASS" starttime="20221116 17:40:03.097" endtime="20221116 17:40:24.560"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Case 2 AllowServiceLocation">Case 2 AllowServiceLocation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
