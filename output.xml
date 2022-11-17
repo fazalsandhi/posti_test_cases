@@ -1,83 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20221116 17:40:03.094" rpa="false" schemaversion="3">
-<suite id="s1" name="Case 2 AllowServiceLocation" source="C:\Users\admin\PycharmProjects\PostiAssignment\TestCases\Case_2_AllowServiceLocation.robot">
-<test id="s1-t1" name="AllowSercieLocationAndClickSearch" line="10">
-<kw name="OpenBrowserForServicePickup" library="Resources">
+<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20221117 10:54:41.612" rpa="false" schemaversion="3">
+<suite id="s1" name="Case 7 2 4 LetterPriceCalculation" source="C:\Users\admin\PycharmProjects\PostiAssignment\TestCases\Case_7_2_4_LetterPriceCalculation.robot">
+<test id="s1-t1" name="LetterPriceCalculation" line="10">
+<kw name="OpenBrowserForParcelTracking" library="Resources">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url_service_point}</arg>
+<arg>${url_parcel_tracking}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221116 17:40:03.566" level="INFO">Opening browser 'chrome' to base url 'https://www.posti.fi/en/service-points-on-map'.</msg>
-<status status="PASS" starttime="20221116 17:40:03.565" endtime="20221116 17:40:07.197"/>
+<msg timestamp="20221117 10:54:42.047" level="INFO">Opening browser 'chrome' to base url 'https://www.posti.fi/en/private/parcels-and-tracking'.</msg>
+<status status="PASS" starttime="20221117 10:54:42.046" endtime="20221117 10:54:46.211"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221116 17:40:07.197" endtime="20221116 17:40:07.930"/>
+<status status="PASS" starttime="20221117 10:54:46.211" endtime="20221117 10:54:46.439"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>5</arg>
+<arg>6</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20221116 17:40:07.931" endtime="20221116 17:40:07.933"/>
+<status status="PASS" starttime="20221117 10:54:46.439" endtime="20221117 10:54:46.457"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:onetrust-accept-btn-handler</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221116 17:40:07.934" level="INFO">Clicking element 'id:onetrust-accept-btn-handler'.</msg>
-<status status="PASS" starttime="20221116 17:40:07.933" endtime="20221116 17:40:09.544"/>
+<msg timestamp="20221117 10:54:46.457" level="INFO">Clicking element 'id:onetrust-accept-btn-handler'.</msg>
+<status status="PASS" starttime="20221117 10:54:46.457" endtime="20221117 10:54:47.047"/>
 </kw>
-<status status="PASS" starttime="20221116 17:40:03.565" endtime="20221116 17:40:09.545"/>
+<status status="PASS" starttime="20221117 10:54:42.046" endtime="20221117 10:54:47.047"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221117 10:54:50.072" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221117 10:54:47.062" endtime="20221117 10:54:50.072"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://body/div[@id='___gatsby']/div[@id='gatsby-focus-wrapper']/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/section[2]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]</arg>
+<arg>xpath://*[@id="posti-fi-navigation"]/div/ul/li[2]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221116 17:40:09.581" level="INFO">Clicking element 'xpath://body/div[@id='___gatsby']/div[@id='gatsby-focus-wrapper']/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/section[2]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]'.</msg>
-<status status="PASS" starttime="20221116 17:40:09.580" endtime="20221116 17:40:10.175"/>
+<msg timestamp="20221117 10:54:50.076" level="INFO">Clicking element 'xpath://*[@id="posti-fi-navigation"]/div/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20221117 10:54:50.074" endtime="20221117 10:54:50.252"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221117 10:54:53.258" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221117 10:54:50.253" endtime="20221117 10:54:53.258"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://body/div[@id='___gatsby']/div[@id='gatsby-focus-wrapper']/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/section[2]/div[1]/div[2]/div[1]/div[1]/div[1]/button[2]</arg>
+<arg>xpath://body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/aside[1]/nav[1]/ul[1]/li[1]/a[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221116 17:40:10.178" level="INFO">Clicking element 'xpath://body/div[@id='___gatsby']/div[@id='gatsby-focus-wrapper']/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/section[2]/div[1]/div[2]/div[1]/div[1]/div[1]/button[2]'.</msg>
-<status status="PASS" starttime="20221116 17:40:10.176" endtime="20221116 17:40:10.832"/>
+<msg timestamp="20221117 10:54:53.260" level="INFO">Clicking element 'xpath://body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/aside[1]/nav[1]/ul[1]/li[1]/a[1]'.</msg>
+<status status="PASS" starttime="20221117 10:54:53.259" endtime="20221117 10:54:53.363"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221117 10:54:56.373" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221117 10:54:53.364" endtime="20221117 10:54:56.373"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="main"]/header/div[2]/div/div[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221117 10:54:56.407" level="INFO">Clicking element 'xpath://*[@id="main"]/header/div[2]/div/div[1]/a'.</msg>
+<status status="PASS" starttime="20221117 10:54:56.406" endtime="20221117 10:54:56.647"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221117 10:54:59.660" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221117 10:54:56.647" endtime="20221117 10:54:59.660"/>
 </kw>
 <kw name="Scroll To Element" library="Resources">
-<arg>xpath://h2[contains(text(),'Nearest service points')]</arg>
+<arg>xpath://*[@id="main"]/div[2]/div/div[2]/div/form/fieldset/legend</arg>
 <kw name="Get Horizontal Position" library="SeleniumLibrary">
 <var>${x}</var>
 <arg>${locator}</arg>
 <doc>Returns the horizontal position of the element identified by ``locator``.</doc>
-<msg timestamp="20221116 17:40:11.106" level="INFO">${x} = 0</msg>
-<status status="PASS" starttime="20221116 17:40:10.842" endtime="20221116 17:40:11.106"/>
+<msg timestamp="20221117 10:54:59.695" level="INFO">${x} = 488</msg>
+<status status="PASS" starttime="20221117 10:54:59.662" endtime="20221117 10:54:59.696"/>
 </kw>
 <kw name="Get Vertical Position" library="SeleniumLibrary">
 <var>${y}</var>
 <arg>${locator}</arg>
 <doc>Returns the vertical position of the element identified by ``locator``.</doc>
-<msg timestamp="20221116 17:40:11.126" level="INFO">${y} = 1040</msg>
-<status status="PASS" starttime="20221116 17:40:11.107" endtime="20221116 17:40:11.126"/>
+<msg timestamp="20221117 10:54:59.717" level="INFO">${y} = 642</msg>
+<status status="PASS" starttime="20221117 10:54:59.696" endtime="20221117 10:54:59.718"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(${x}, ${y})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20221116 17:40:11.127" level="INFO">Executing JavaScript:
-window.scrollTo(0, 1040)
+<msg timestamp="20221117 10:54:59.719" level="INFO">Executing JavaScript:
+window.scrollTo(488, 642)
 Without any arguments.</msg>
-<status status="PASS" starttime="20221116 17:40:11.126" endtime="20221116 17:40:11.136"/>
+<status status="PASS" starttime="20221117 10:54:59.718" endtime="20221117 10:54:59.724"/>
 </kw>
-<status status="PASS" starttime="20221116 17:40:10.841" endtime="20221116 17:40:11.137"/>
+<status status="PASS" starttime="20221117 10:54:59.661" endtime="20221117 10:54:59.724"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>10</arg>
+<arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221116 17:40:21.147" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20221116 17:40:11.138" endtime="20221116 17:40:21.147"/>
+<msg timestamp="20221117 10:55:01.733" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221117 10:54:59.725" endtime="20221117 10:55:01.733"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>xpath://*[@id="main"]/div[2]/div/div[2]/div/form/fieldset/div[4]/div/label/div/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20221117 10:55:01.734" level="INFO">Selecting checkbox 'xpath://*[@id="main"]/div[2]/div/div[2]/div/form/fieldset/div[4]/div/label/div/input'.</msg>
+<status status="PASS" starttime="20221117 10:55:01.734" endtime="20221117 10:55:01.963"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221117 10:55:02.976" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221117 10:55:01.964" endtime="20221117 10:55:02.976"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="option-5"]/label/div/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221117 10:55:02.986" level="INFO">Clicking element 'xpath://*[@id="option-5"]/label/div/input'.</msg>
+<status status="PASS" starttime="20221117 10:55:02.984" endtime="20221117 10:55:03.183"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="main"]/div[2]/div/div[2]/div/form/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221117 10:55:03.187" level="INFO">Clicking element 'xpath://*[@id="main"]/div[2]/div/div[2]/div/form/button'.</msg>
+<status status="PASS" starttime="20221117 10:55:03.184" endtime="20221117 10:55:03.346"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221117 10:55:08.358" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221117 10:55:03.347" endtime="20221117 10:55:08.358"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221116 17:40:21.148" endtime="20221116 17:40:24.556"/>
+<status status="PASS" starttime="20221117 10:55:08.359" endtime="20221117 10:55:10.900"/>
 </kw>
-<status status="PASS" starttime="20221116 17:40:03.564" endtime="20221116 17:40:24.557"/>
+<status status="PASS" starttime="20221117 10:54:42.045" endtime="20221117 10:55:10.901"/>
 </test>
-<status status="PASS" starttime="20221116 17:40:03.097" endtime="20221116 17:40:24.560"/>
+<status status="PASS" starttime="20221117 10:54:41.618" endtime="20221117 10:55:10.904"/>
 </suite>
 <statistics>
 <total>
@@ -86,7 +146,7 @@ Without any arguments.</msg>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Case 2 AllowServiceLocation">Case 2 AllowServiceLocation</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Case 7 2 4 LetterPriceCalculation">Case 7 2 4 LetterPriceCalculation</stat>
 </suite>
 </statistics>
 <errors>
